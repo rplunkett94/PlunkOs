@@ -4,22 +4,24 @@ import java.lang.reflect.Method;
  * Created by ryanplunkett on 11/16/15.
  */
 public class shellCommand {
-    String func;
+    Object func;
     String command;
     String description;
 
-//    shellCommand(Object object, String string, String string2){
-//        this.func = "";
-//        this.command = "";
-//        this.description = "";
-//
-//
-//    }
 
-	public shellCommand(Object object, String string, String string2) {
-		// TODO Auto-generated constructor stub
-		this.func = null;
-		this.command = "";
-		this.description = "";
+	public shellCommand(Object func, String command, String description) {
+		this.func = func;
+		this.command = command;
+		this.description = description;
 	}
+	
+	public String getCommand(){
+		return this.command;
+	}
+	
+	public String getDesc(){
+		return this.description;
+	}
+
+	
 }

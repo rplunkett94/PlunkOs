@@ -14,14 +14,28 @@ public class console {
         int[] bufferArray;
         int bufferIndex = 0;
     }
+    
+    public void init(){
+    	this.clearScreen();
+    }
 
-
-    public static void putText(String text){
+    public void putText(String text){
 
         if(text != ""){
-           // globals._DrawingContext.dra
+        	MainFrame.outputText.setText(text);
         }
-
     }
+    
+//    public void handleInput(){
+//    	MainFrame.inputText.keyPressed();
+//    }
+    
+    public void clearScreen(){
+    	MainFrame.outputText.setText(null);
+    	}
+    
+    public void advanceLine(){
+    	MainFrame.outputText.setText("\n");
+    	}
 
 }

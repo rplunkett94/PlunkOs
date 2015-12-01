@@ -1,11 +1,7 @@
-
-
 import java.lang.Number;
 import java.lang.String;
 import java.awt.Canvas;
-import source.host.cpu;
-import source.host.memory;
-import source.os.memoryManager;
+
 
 public class globals {
    public static String APP_NAME = "PlunkOS";
